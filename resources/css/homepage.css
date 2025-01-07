@@ -22,11 +22,9 @@ div[id="sign_in_option_panel"]{
 	height: 10%;
 }
 
-
 div[id="logo"]{
 	/*width: 79%;*/
 }
-
 
 button{
 	width: 30%;
@@ -40,6 +38,7 @@ button{
 	transition-duration: 0s;
 	cursor: pointer;
 }
+
 button:hover{
 	font-size: 18px;
 	border: 1px solid lightgreen;
@@ -51,6 +50,7 @@ p{
 	font-size: 190%;
 	font-weight: bold;
 }
+
 span[id="message"]{
 	font-size: 300%;
 	color: grey;
@@ -80,6 +80,7 @@ input{
 	height: 95%;
 	border: 0px solid white;
 }
+
 img[id="search_icon"]{
 	position: relative;
 	top: 10%;
@@ -96,12 +97,3 @@ img[id="network_pic"]{
 	border-bottom-left-radius: 100%;
 	*/
 }
-
-
-
-
-
-
-
-
-
