@@ -1,4 +1,37 @@
-span[id="logo_design"]{
+body {
+	display: flex;
+	flex-direction: column;
+	margin-left: 10%;
+	width: 80%;
+}
+
+div {
+	display: flex;
+	margin: 1%;
+}
+
+div [id="navigation"] {
+	display: flex;
+	width: 50%;
+	flex-direction: column;
+	justify-content: center;
+}
+
+div [id="logo"] {
+	display: flex;
+	width: 50%;
+	justify-content: flex-start;
+	order: -1;
+}
+
+div [id="registration"] {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 50%;
+}
+
+span [id="logo_design"] {
 	color:white;
 	background-color: blue;
 	font-size: 150%;
@@ -10,90 +43,129 @@ span[id="logo_design"]{
 	border-bottom-left-radius: 100%;
 }
 
-div[id="sign_in_buttons"]{
-	position: absolute;
-	width: 30%;
-	right: 1%;
-	top: 5%;
-}
-
-div[id="sign_in_option_panel"]{
-	background-color: white;/*lightgrey;*/
-	height: 10%;
-}
-
-div[id="logo"]{
-	/*width: 79%;*/
-}
-
-button{
-	width: 30%;
-	height: 40px;
+button {
+	width: 100px;
+	height: 30px;
 	font-size: 100%;
 	font-weight: bold;
 	font-family: "Times New Roman";
-	margin:2%;
+	margin: 2%;
 	border: 0px;
 	transition-property: font-size,border, background-color;
 	transition-duration: 0s;
 	cursor: pointer;
 }
 
-button:hover{
-	font-size: 18px;
-	border: 1px solid lightgreen;
+button:hover {
 	background-color: blue;
 	color:white;
 }
 
-p{
-	font-size: 190%;
-	font-weight: bold;
+div [id="content"] {
+	display: flex;
+	margin: 40%;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: start;
 }
 
-span[id="message"]{
-	font-size: 300%;
+div [id="network-img"] {
+	display: flex;
+	width: 100%;
+}
+
+#network_pic {
+	width: 100%;
+	height: 50%;
+}
+
+div [id="content-message"] {
+	justify-content: flex-start;
+	flex-direction: column;
+	display: flex;
+	width: 30%;
+	font-size: 320%;
 	color: grey;
 }
 
-div.message{
-	position: absolute;
-	width: 30%;
-	height: 30%;
-	left: 8%;
-	top: 28%;
-}
-
-div[id="search_box_div"]{
-	position: absolute;
+div [id="search_box_div"] {
+	align-self: flex-start;
+	font-size: 50%;
 	top: 65%;
 	left: 8%;
-	height: 8%;
-	width: 30%;
+	height: 5%;
+	width: 80%;
+	margin-top: 10%;
 	border: 1px solid blue;
-}
+} 
 
-input{
+input {
 	float: right;
+	font-size: 100%;
 	right: 0px;
 	width: 88%;
 	height: 95%;
 	border: 0px solid white;
 }
 
-img[id="search_icon"]{
+input:focus, input:active, input:hover {
+	border:  0px solid white;;
+}
+
+img [id="search_icon"] {
 	position: relative;
 	top: 10%;
 	width: 10%;
 	height: 70%;
 }
 
-img[id="network_pic"]{
-	position: absolute;
-	right: 8%;
-/*	border-top-left-radius: 100%;
-	border-bottom-right-radius: 100%;
-	border-top-right-radius: 100%;
-	border-bottom-left-radius: 100%;
-	*/
+
+@media screen and (max-width: 1080px) {
+	div {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	div [id="network-img"] {
+		visibility: hidden;
+	}
+
+	div [id="content-message"] {
+		display: flex;
+		flex-direction: column;
+		font-size: 100%;
+		width: 100%;
+		margin-left: 3%;
+	}
+
+	div[id="search_box_div"] {
+		height: 30px;
+		width: 99%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	div[id="search_box_div"] input {
+		width: 100%;
+		height: 90%;
+	}
+
+	img [id="search_icon"] {
+		height: 100%;
+		width: 5%;
+	}
+
+	div [id="logo"] {
+		width: 100%;
+		align-items: center;
+	}
+
+	div [id="registration"] {
+		width: 100%;
+	}
+
+	div [id="registration"] button {
+		width: 100%;
+	}
 }
