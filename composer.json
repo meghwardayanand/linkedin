@@ -1,0 +1,7 @@
+{
+    "name": "my-network-project",
+    "description": "LinkedIn Clone",
+    "require": {
+        "php": "8.4.2"
+    }
+}
