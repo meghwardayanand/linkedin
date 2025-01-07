@@ -1,0 +1,107 @@
+span[id="logo_design"]{
+	color:white;
+	background-color: blue;
+	font-size: 150%;
+	font-weight: bold;
+	font-family: "Times New Roman";
+	border-top-right-radius: 100%;
+	border-top-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+	border-bottom-left-radius: 100%;
+}
+
+div[id="sign_in_buttons"]{
+	position: absolute;
+	width: 30%;
+	right: 1%;
+	top: 5%;
+}
+
+div[id="sign_in_option_panel"]{
+	background-color: white;/*lightgrey;*/
+	height: 10%;
+}
+
+
+div[id="logo"]{
+	/*width: 79%;*/
+}
+
+
+button{
+	width: 30%;
+	height: 40px;
+	font-size: 100%;
+	font-weight: bold;
+	font-family: "Times New Roman";
+	margin:2%;
+	border: 0px;
+	transition-property: font-size,border, background-color;
+	transition-duration: 0s;
+	cursor: pointer;
+}
+button:hover{
+	font-size: 18px;
+	border: 1px solid lightgreen;
+	background-color: blue;
+	color:white;
+}
+
+p{
+	font-size: 190%;
+	font-weight: bold;
+}
+span[id="message"]{
+	font-size: 300%;
+	color: grey;
+}
+
+div.message{
+	position: absolute;
+	width: 30%;
+	height: 30%;
+	left: 8%;
+	top: 28%;
+}
+
+div[id="search_box_div"]{
+	position: absolute;
+	top: 65%;
+	left: 8%;
+	height: 8%;
+	width: 30%;
+	border: 1px solid blue;
+}
+
+input{
+	float: right;
+	right: 0px;
+	width: 88%;
+	height: 95%;
+	border: 0px solid white;
+}
+img[id="search_icon"]{
+	position: relative;
+	top: 10%;
+	width: 10%;
+	height: 70%;
+}
+
+img[id="network_pic"]{
+	position: absolute;
+	right: 8%;
+/*	border-top-left-radius: 100%;
+	border-bottom-right-radius: 100%;
+	border-top-right-radius: 100%;
+	border-bottom-left-radius: 100%;
+	*/
+}
+
+
+
+
+
+
+
+
+
